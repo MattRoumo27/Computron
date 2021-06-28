@@ -3,11 +3,13 @@ module.exports = {
     description: 'Evaluates an algebraic expression',
     execute(client, message, args) {
         console.log(args);
-        if (!containValidNumberOfParenthesis(args)) {
+        const characterArgs = args.join("").split("");
+
+        if (!containValidNumberOfParenthesis(characterArgs)) {
             return message.reply('There is an incorrect number of parenthesis in the expression!');
         }
 
-        if (!containValidArguments(args.join("").split(""))) {
+        if (!containValidArguments(characterArgs)) {
             return message.reply('There is/are invalid argument/s');
         }
 
@@ -29,7 +31,7 @@ module.exports = {
     }
 }
 
-let validArguments = [
+const validArguments = [
     '(',
     ')',
     '+',
