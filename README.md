@@ -10,6 +10,11 @@ A Discord bot application built with NodeJS. A simple calculator app that reads 
 * [discord.js](https://discord.js.org/#/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [file-system](https://www.npmjs.com/package/file-system)
+* [Heroku](https://dashboard.heroku.com/apps)
+
+## Add the Bot to Your Server
+
+The bot has been deployed on Heroku and can be added to a Discord server through this [link](https://discord.com/oauth2/authorize?client_id=858088074877599831&permissions=8&scope=bot)
 
 ## How to Start the Project
 
