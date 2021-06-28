@@ -6,7 +6,7 @@ A Discord bot application built with NodeJS. A simple calculator app that reads 
 
 ## Tools Used
 
-* [NodeJS](https://nodejs.org/en/)
+* [Node.js](https://nodejs.org/en/)
 * [discord.js](https://discord.js.org/#/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [file-system](https://www.npmjs.com/package/file-system)
