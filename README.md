@@ -2,12 +2,12 @@
 
 ## Overview
 
-A Discord bot application built with NodeJS. A simple calculator app that reads commands from a user to add, subtract, multiply, and divide numbers together. It can also be used to evaluate an algebraic expression when using the eval command. I used the [discord.js](https://discord.js.org/#/) to build the bot as I have working knowledge of JavaScript, and I thought it would be a fun project to build a program that works with Discord. I faced a few challenges in checking for erroneous inputs that a user could have. This is where most of the bug fixing dealt with as I had to think of different possibilities for when an algebraic expression would be invalid (for the eval command).  
+A Discord bot application built with NodeJS. A simple calculator app that reads commands from a user to add, subtract, multiply, and divide numbers together. It can also be used to evaluate an algebraic expression when using the eval command. I used the [discord.js](https://discord.js.org/#/) npm package to build the bot as I have working knowledge of JavaScript, and I thought it would be a fun project to build a program that works with Discord. I faced a few challenges in checking for erroneous inputs that a user could have. This is where most of the bug fixing dealt with as I had to think of different possibilities for when an algebraic expression would be invalid (for the eval command).  
 
 ## Tools Used
 
 * [NodeJS](https://nodejs.org/en/)
-* [Discord.js](https://discord.js.org/#/)
+* [discord.js](https://discord.js.org/#/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [file-system](https://www.npmjs.com/package/file-system)
 
@@ -42,11 +42,19 @@ in a command line setting like [Git Bash](https://git-scm.com/downloads).
 
 ## Commands
 
+### hello
+
+Say hello to Computron with this basic command
+
+```text
+!hello
+```
+
 ### add
 
 Adds two or more numbers sequentially
 
-```txt
+```text
 !add 2 9
 ```
 
@@ -54,7 +62,7 @@ Adds two or more numbers sequentially
 
 Subtracts two or more numbers sequentially
 
-```txt
+```text
 !sub 10 5 5
 ```
 
@@ -62,7 +70,7 @@ Subtracts two or more numbers sequentially
 
 Multiples two or more numbers sequentially
 
-```mult
+```text
 !mult 5 8 9 7
 ```
 
@@ -70,7 +78,33 @@ Multiples two or more numbers sequentially
 
 Divides two or more numbers sequentially
 
+```text
+!div 8 2
+```
+
 ### mod
+
+Calculates the remainder of dividing the first argument by the second argument
+
+```text
+!mod 8 3
+```
+
+### eval
+
+Give Computron an algebraic equation to solve (assuming it is has the correct syntax)
+
+```text
+!eval (40 - -5) * (26 / 4) + 70
+```
+
+### help
+
+Ask Computron for information about the different commands it can perform
+
+```text
+!help
+```
 
 ## License
 
